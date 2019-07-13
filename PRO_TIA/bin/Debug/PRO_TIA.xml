@@ -1,0 +1,516 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PRO_TIA
+</name>
+</assembly>
+<members>
+<member name="T:PRO_TIA.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PRO_TIA.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PRO_TIA.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._BEAT__PDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.FORCASTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.JOMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.MY_DATADataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._BEAT___POSITION_Query1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.COMPLETED_INSPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._O_S_REPORT_QUERYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.POSITION_ROUND_QUERYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.ST_POSITIONDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.TIME_TABLEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._BEAT__PRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.FORCASTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.JOMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.MY_DATARow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._BEAT___POSITION_Query1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.COMPLETED_INSPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._O_S_REPORT_QUERYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.POSITION_ROUND_QUERYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.ST_POSITIONRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.TIME_TABLERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._BEAT__PRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.FORCASTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.JOMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.MY_DATARowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._BEAT___POSITION_Query1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.COMPLETED_INSPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet._O_S_REPORT_QUERYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.POSITION_ROUND_QUERYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.ST_POSITIONRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet.TIME_TABLERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.BEAT__PTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.FORCASTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.JOMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.MY_DATATableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.BEAT___POSITION_Query1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.COMPLETED_INSPTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.O_S_REPORT_QUERYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.POSITION_ROUND_QUERYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.ST_POSITIONTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.TIME_TABLETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(PRO_TIA.MY_INSPDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(PRO_TIA.MY_INSPDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(PRO_TIA.MY_INSPDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager.UpdateAll(PRO_TIA.MY_INSPDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._BEAT__PDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.FORCASTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.JOMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.MY_DATADataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._BEAT___POSITION_Query1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.COMPLETED_INSPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._O_S_REPORT_QUERYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.POSITION_ROUND_QUERYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.ST_POSITIONDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.TIME_TABLEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._BEAT__PRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.FORCASTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.JOMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.MY_DATARow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._BEAT___POSITION_Query1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.COMPLETED_INSPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._O_S_REPORT_QUERYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.POSITION_ROUND_QUERYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.ST_POSITIONRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.TIME_TABLERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._BEAT__PRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.FORCASTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.JOMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.MY_DATARowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._BEAT___POSITION_Query1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.COMPLETED_INSPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1._O_S_REPORT_QUERYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.POSITION_ROUND_QUERYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.ST_POSITIONRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1.TIME_TABLERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.BEAT__PTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.FORCASTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.JOMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.MY_DATATableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.BEAT___POSITION_Query1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.COMPLETED_INSPTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.O_S_REPORT_QUERYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.POSITION_ROUND_QUERYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.ST_POSITIONTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.TIME_TABLETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(PRO_TIA.MY_INSPDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(PRO_TIA.MY_INSPDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(PRO_TIA.MY_INSPDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.UpdateAll(PRO_TIA.MY_INSPDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

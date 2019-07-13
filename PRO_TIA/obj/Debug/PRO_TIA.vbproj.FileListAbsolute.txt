@@ -1,0 +1,15 @@
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.vbprojAssemblyReference.cache
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.Form1.resources
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.Form2.resources
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.Form3.resources
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.Resources.resources
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.vbproj.GenerateResource.cache
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.vbproj.CoreCompileInputs.cache
+C:\MY VB PROJECTS\PRO_TIA\bin\Debug\MY_INSP.accdb
+C:\MY VB PROJECTS\PRO_TIA\bin\Debug\PRO_TIA.exe.config
+C:\MY VB PROJECTS\PRO_TIA\bin\Debug\PRO_TIA.exe
+C:\MY VB PROJECTS\PRO_TIA\bin\Debug\PRO_TIA.pdb
+C:\MY VB PROJECTS\PRO_TIA\bin\Debug\PRO_TIA.xml
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.exe
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.xml
+C:\MY VB PROJECTS\PRO_TIA\obj\Debug\PRO_TIA.pdb
