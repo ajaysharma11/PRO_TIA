@@ -592,6 +592,7 @@ VALUES   (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="DAYS" msprop:Generator_ColumnVarNameInTable="columnDAYS" msprop:Generator_ColumnPropNameInRow="DAYS" msprop:Generator_ColumnPropNameInTable="DAYSColumn" msprop:Generator_UserColumnName="DAYS" type="xs:int" minOccurs="0" />
+              <xs:element name="DAY_BOOKED" msprop:Generator_ColumnVarNameInTable="columnDAY_BOOKED" msprop:Generator_ColumnPropNameInRow="DAY_BOOKED" msprop:Generator_ColumnPropNameInTable="DAY_BOOKEDColumn" msprop:Generator_UserColumnName="DAY_BOOKED" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -44,6 +44,7 @@ Partial Class Form3
         Dim LINSPLabel As System.Windows.Forms.Label
         Dim NDUELabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
+        Me.ST_WORKED_ATLabel1 = New System.Windows.Forms.Label()
         Me.MY_INSPDataSet = New PRO_TIA.MY_INSPDataSet()
         Me.JOMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JOMTableAdapter = New PRO_TIA.MY_INSPDataSetTableAdapters.JOMTableAdapter()
@@ -63,12 +64,7 @@ Partial Class Form3
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.JOMBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.IDTextBox = New System.Windows.Forms.TextBox()
-        Me.WEEK_ENDINGTextBox = New System.Windows.Forms.TextBox()
-        Me.DATE_OF_JOURNEYTextBox = New System.Windows.Forms.TextBox()
-        Me.DAY_OF_JOURNEYTextBox = New System.Windows.Forms.TextBox()
         Me.TRAINTextBox = New System.Windows.Forms.TextBox()
-        Me.DEPTextBox = New System.Windows.Forms.TextBox()
-        Me.ARRTextBox = New System.Windows.Forms.TextBox()
         Me.ST_FROMTextBox = New System.Windows.Forms.TextBox()
         Me.ST_TOTextBox = New System.Windows.Forms.TextBox()
         Me.ST_WORKED_ATComboBox = New System.Windows.Forms.ComboBox()
@@ -87,7 +83,6 @@ Partial Class Form3
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.BEATPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JOMDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -110,6 +105,15 @@ Partial Class Form3
         Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dtojDT = New System.Windows.Forms.DateTimePicker()
+        Me.DAYDT = New System.Windows.Forms.DateTimePicker()
+        Me.WEEK_DT = New System.Windows.Forms.DateTimePicker()
+        Me.DEP_DTP = New System.Windows.Forms.DateTimePicker()
+        Me.ARRDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.MY_INSPDataSet1 = New PRO_TIA.MY_INSPDataSet1()
+        Me.JOMBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JOMTableAdapter1 = New PRO_TIA.MY_INSPDataSet1TableAdapters.JOMTableAdapter()
+        Me.TableAdapterManager1 = New PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager()
         IDLabel = New System.Windows.Forms.Label()
         WEEK_ENDINGLabel = New System.Windows.Forms.Label()
         DATE_OF_JOURNEYLabel = New System.Windows.Forms.Label()
@@ -137,6 +141,8 @@ Partial Class Form3
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BEATPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JOMDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MY_INSPDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.JOMBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'IDLabel
@@ -250,7 +256,7 @@ Partial Class Form3
         'Insp_compLabel
         '
         Insp_compLabel.AutoSize = True
-        Insp_compLabel.Location = New System.Drawing.Point(554, 17)
+        Insp_compLabel.Location = New System.Drawing.Point(508, 98)
         Insp_compLabel.Name = "Insp_compLabel"
         Insp_compLabel.Size = New System.Drawing.Size(58, 13)
         Insp_compLabel.TabIndex = 25
@@ -259,7 +265,7 @@ Partial Class Form3
         'REPORT_SUBMISSIONLabel
         '
         REPORT_SUBMISSIONLabel.AutoSize = True
-        REPORT_SUBMISSIONLabel.Location = New System.Drawing.Point(554, 45)
+        REPORT_SUBMISSIONLabel.Location = New System.Drawing.Point(462, 129)
         REPORT_SUBMISSIONLabel.Name = "REPORT_SUBMISSIONLabel"
         REPORT_SUBMISSIONLabel.Size = New System.Drawing.Size(125, 13)
         REPORT_SUBMISSIONLabel.TabIndex = 27
@@ -304,7 +310,7 @@ Partial Class Form3
         'LINSPLabel
         '
         LINSPLabel.AutoSize = True
-        LINSPLabel.Location = New System.Drawing.Point(554, 83)
+        LINSPLabel.Location = New System.Drawing.Point(462, 167)
         LINSPLabel.Name = "LINSPLabel"
         LINSPLabel.Size = New System.Drawing.Size(41, 13)
         LINSPLabel.TabIndex = 37
@@ -318,6 +324,15 @@ Partial Class Form3
         NDUELabel.Size = New System.Drawing.Size(41, 13)
         NDUELabel.TabIndex = 39
         NDUELabel.Text = "NDUE:"
+        '
+        'ST_WORKED_ATLabel1
+        '
+        Me.ST_WORKED_ATLabel1.AutoSize = True
+        Me.ST_WORKED_ATLabel1.Location = New System.Drawing.Point(560, 67)
+        Me.ST_WORKED_ATLabel1.Name = "ST_WORKED_ATLabel1"
+        Me.ST_WORKED_ATLabel1.Size = New System.Drawing.Size(93, 13)
+        Me.ST_WORKED_ATLabel1.TabIndex = 52
+        Me.ST_WORKED_ATLabel1.Text = "ST WORKED AT:"
         '
         'MY_INSPDataSet
         '
@@ -360,7 +375,7 @@ Partial Class Form3
         Me.JOMBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.JOMBindingNavigator.Name = "JOMBindingNavigator"
         Me.JOMBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.JOMBindingNavigator.Size = New System.Drawing.Size(800, 25)
+        Me.JOMBindingNavigator.Size = New System.Drawing.Size(820, 25)
         Me.JOMBindingNavigator.TabIndex = 0
         Me.JOMBindingNavigator.Text = "BindingNavigator1"
         '
@@ -461,80 +476,40 @@ Partial Class Form3
         'IDTextBox
         '
         Me.IDTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "ID", True))
-        Me.IDTextBox.Location = New System.Drawing.Point(146, 42)
+        Me.IDTextBox.Location = New System.Drawing.Point(131, 40)
         Me.IDTextBox.Name = "IDTextBox"
-        Me.IDTextBox.Size = New System.Drawing.Size(77, 20)
+        Me.IDTextBox.Size = New System.Drawing.Size(95, 20)
         Me.IDTextBox.TabIndex = 1
-        '
-        'WEEK_ENDINGTextBox
-        '
-        Me.WEEK_ENDINGTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "WEEK ENDING", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.WEEK_ENDINGTextBox.Location = New System.Drawing.Point(146, 68)
-        Me.WEEK_ENDINGTextBox.Name = "WEEK_ENDINGTextBox"
-        Me.WEEK_ENDINGTextBox.Size = New System.Drawing.Size(77, 20)
-        Me.WEEK_ENDINGTextBox.TabIndex = 2
-        '
-        'DATE_OF_JOURNEYTextBox
-        '
-        Me.DATE_OF_JOURNEYTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "DATE OF JOURNEY", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.DATE_OF_JOURNEYTextBox.Location = New System.Drawing.Point(146, 94)
-        Me.DATE_OF_JOURNEYTextBox.Name = "DATE_OF_JOURNEYTextBox"
-        Me.DATE_OF_JOURNEYTextBox.Size = New System.Drawing.Size(77, 20)
-        Me.DATE_OF_JOURNEYTextBox.TabIndex = 3
-        '
-        'DAY_OF_JOURNEYTextBox
-        '
-        Me.DAY_OF_JOURNEYTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "DAY OF JOURNEY", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.DAY_OF_JOURNEYTextBox.Location = New System.Drawing.Point(146, 120)
-        Me.DAY_OF_JOURNEYTextBox.Name = "DAY_OF_JOURNEYTextBox"
-        Me.DAY_OF_JOURNEYTextBox.Size = New System.Drawing.Size(77, 20)
-        Me.DAY_OF_JOURNEYTextBox.TabIndex = 4
         '
         'TRAINTextBox
         '
         Me.TRAINTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "TRAIN", True))
-        Me.TRAINTextBox.Location = New System.Drawing.Point(146, 146)
+        Me.TRAINTextBox.Location = New System.Drawing.Point(131, 144)
         Me.TRAINTextBox.Name = "TRAINTextBox"
-        Me.TRAINTextBox.Size = New System.Drawing.Size(77, 20)
+        Me.TRAINTextBox.Size = New System.Drawing.Size(95, 20)
         Me.TRAINTextBox.TabIndex = 5
-        '
-        'DEPTextBox
-        '
-        Me.DEPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "DEP", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "t"))
-        Me.DEPTextBox.Location = New System.Drawing.Point(146, 172)
-        Me.DEPTextBox.Name = "DEPTextBox"
-        Me.DEPTextBox.Size = New System.Drawing.Size(77, 20)
-        Me.DEPTextBox.TabIndex = 6
-        '
-        'ARRTextBox
-        '
-        Me.ARRTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "ARR", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "t"))
-        Me.ARRTextBox.Location = New System.Drawing.Point(146, 198)
-        Me.ARRTextBox.Name = "ARRTextBox"
-        Me.ARRTextBox.Size = New System.Drawing.Size(77, 20)
-        Me.ARRTextBox.TabIndex = 7
         '
         'ST_FROMTextBox
         '
         Me.ST_FROMTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "ST FROM", True))
-        Me.ST_FROMTextBox.Location = New System.Drawing.Point(146, 224)
+        Me.ST_FROMTextBox.Location = New System.Drawing.Point(131, 222)
         Me.ST_FROMTextBox.Name = "ST_FROMTextBox"
-        Me.ST_FROMTextBox.Size = New System.Drawing.Size(77, 20)
+        Me.ST_FROMTextBox.Size = New System.Drawing.Size(95, 20)
         Me.ST_FROMTextBox.TabIndex = 8
         '
         'ST_TOTextBox
         '
         Me.ST_TOTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "ST TO", True))
-        Me.ST_TOTextBox.Location = New System.Drawing.Point(146, 250)
+        Me.ST_TOTextBox.Location = New System.Drawing.Point(131, 248)
         Me.ST_TOTextBox.Name = "ST_TOTextBox"
-        Me.ST_TOTextBox.Size = New System.Drawing.Size(77, 20)
+        Me.ST_TOTextBox.Size = New System.Drawing.Size(95, 20)
         Me.ST_TOTextBox.TabIndex = 9
         '
         'ST_WORKED_ATComboBox
         '
         Me.ST_WORKED_ATComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "ST WORKED AT", True))
         Me.ST_WORKED_ATComboBox.FormattingEnabled = True
-        Me.ST_WORKED_ATComboBox.Location = New System.Drawing.Point(369, 39)
+        Me.ST_WORKED_ATComboBox.Location = New System.Drawing.Point(369, 34)
         Me.ST_WORKED_ATComboBox.Name = "ST_WORKED_ATComboBox"
         Me.ST_WORKED_ATComboBox.Size = New System.Drawing.Size(77, 21)
         Me.ST_WORKED_ATComboBox.TabIndex = 10
@@ -558,7 +533,7 @@ Partial Class Form3
         'Insp_compCheckBox
         '
         Me.Insp_compCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.JOMBindingSource, "insp comp", True))
-        Me.Insp_compCheckBox.Location = New System.Drawing.Point(685, 12)
+        Me.Insp_compCheckBox.Location = New System.Drawing.Point(593, 96)
         Me.Insp_compCheckBox.Name = "Insp_compCheckBox"
         Me.Insp_compCheckBox.Size = New System.Drawing.Size(77, 24)
         Me.Insp_compCheckBox.TabIndex = 26
@@ -568,7 +543,7 @@ Partial Class Form3
         'REPORT_SUBMISSIONTextBox
         '
         Me.REPORT_SUBMISSIONTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "REPORT SUBMISSION", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.REPORT_SUBMISSIONTextBox.Location = New System.Drawing.Point(685, 42)
+        Me.REPORT_SUBMISSIONTextBox.Location = New System.Drawing.Point(593, 126)
         Me.REPORT_SUBMISSIONTextBox.Name = "REPORT_SUBMISSIONTextBox"
         Me.REPORT_SUBMISSIONTextBox.Size = New System.Drawing.Size(77, 20)
         Me.REPORT_SUBMISSIONTextBox.TabIndex = 28
@@ -608,7 +583,7 @@ Partial Class Form3
         'LINSPTextBox
         '
         Me.LINSPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JOMBindingSource, "LINSP", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.LINSPTextBox.Location = New System.Drawing.Point(685, 80)
+        Me.LINSPTextBox.Location = New System.Drawing.Point(593, 164)
         Me.LINSPTextBox.Name = "LINSPTextBox"
         Me.LINSPTextBox.Size = New System.Drawing.Size(77, 20)
         Me.LINSPTextBox.TabIndex = 38
@@ -623,6 +598,7 @@ Partial Class Form3
         '
         'NumericUpDown1
         '
+        Me.NumericUpDown1.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.BEATPBindingSource, "DAY_BOOKED", True))
         Me.NumericUpDown1.Location = New System.Drawing.Point(369, 71)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(77, 20)
@@ -663,17 +639,6 @@ Partial Class Form3
         Me.Button3.TabIndex = 45
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'ListBox1
-        '
-        Me.ListBox1.DataSource = Me.BEATPBindingSource
-        Me.ListBox1.DisplayMember = "STATION"
-        Me.ListBox1.Enabled = False
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(512, 106)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(176, 95)
-        Me.ListBox1.TabIndex = 46
         '
         'BEATPBindingSource
         '
@@ -811,14 +776,97 @@ Partial Class Form3
         Me.DataGridViewTextBoxColumn19.HeaderText = "NDUE"
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
         '
+        'dtojDT
+        '
+        Me.dtojDT.AllowDrop = True
+        Me.dtojDT.CustomFormat = "dd-MMM-yyyy"
+        Me.dtojDT.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.JOMBindingSource, "DATE OF JOURNEY", True))
+        Me.dtojDT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtojDT.Location = New System.Drawing.Point(131, 91)
+        Me.dtojDT.Name = "dtojDT"
+        Me.dtojDT.Size = New System.Drawing.Size(95, 20)
+        Me.dtojDT.TabIndex = 50
+        '
+        'DAYDT
+        '
+        Me.DAYDT.CustomFormat = "dddd"
+        Me.DAYDT.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.JOMBindingSource, "DAY OF JOURNEY", True))
+        Me.DAYDT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DAYDT.Location = New System.Drawing.Point(131, 118)
+        Me.DAYDT.Name = "DAYDT"
+        Me.DAYDT.Size = New System.Drawing.Size(96, 20)
+        Me.DAYDT.TabIndex = 51
+        '
+        'WEEK_DT
+        '
+        Me.WEEK_DT.AllowDrop = True
+        Me.WEEK_DT.CustomFormat = "dd-MMM-yyyy"
+        Me.WEEK_DT.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.JOMBindingSource, "WEEK ENDING", True))
+        Me.WEEK_DT.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.WEEK_DT.Location = New System.Drawing.Point(131, 67)
+        Me.WEEK_DT.Name = "WEEK_DT"
+        Me.WEEK_DT.Size = New System.Drawing.Size(95, 20)
+        Me.WEEK_DT.TabIndex = 52
+        '
+        'DEP_DTP
+        '
+        Me.DEP_DTP.CustomFormat = "HH:mm"
+        Me.DEP_DTP.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.JOMBindingSource, "DEP", True))
+        Me.DEP_DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DEP_DTP.Location = New System.Drawing.Point(131, 168)
+        Me.DEP_DTP.Name = "DEP_DTP"
+        Me.DEP_DTP.ShowUpDown = True
+        Me.DEP_DTP.Size = New System.Drawing.Size(95, 20)
+        Me.DEP_DTP.TabIndex = 6
+        '
+        'ARRDateTimePicker
+        '
+        Me.ARRDateTimePicker.CustomFormat = "HH:mm"
+        Me.ARRDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.JOMBindingSource, "ARR", True))
+        Me.ARRDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.ARRDateTimePicker.Location = New System.Drawing.Point(131, 194)
+        Me.ARRDateTimePicker.Name = "ARRDateTimePicker"
+        Me.ARRDateTimePicker.ShowUpDown = True
+        Me.ARRDateTimePicker.Size = New System.Drawing.Size(96, 20)
+        Me.ARRDateTimePicker.TabIndex = 7
+        '
+        'MY_INSPDataSet1
+        '
+        Me.MY_INSPDataSet1.DataSetName = "MY_INSPDataSet1"
+        Me.MY_INSPDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'JOMBindingSource1
+        '
+        Me.JOMBindingSource1.DataMember = "JOM"
+        Me.JOMBindingSource1.DataSource = Me.MY_INSPDataSet1
+        '
+        'JOMTableAdapter1
+        '
+        Me.JOMTableAdapter1.ClearBeforeFill = True
+        '
+        'TableAdapterManager1
+        '
+        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager1.BEAT__PTableAdapter = Nothing
+        Me.TableAdapterManager1.FORCASTTableAdapter = Nothing
+        Me.TableAdapterManager1.JOMTableAdapter = Me.JOMTableAdapter1
+        Me.TableAdapterManager1.MY_DATATableAdapter = Nothing
+        Me.TableAdapterManager1.UpdateOrder = PRO_TIA.MY_INSPDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
         'Form3
         '
+        Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Salmon
-        Me.ClientSize = New System.Drawing.Size(800, 637)
+        Me.ClientSize = New System.Drawing.Size(820, 637)
+        Me.Controls.Add(Me.ST_WORKED_ATLabel1)
+        Me.Controls.Add(Me.ARRDateTimePicker)
+        Me.Controls.Add(Me.DEP_DTP)
+        Me.Controls.Add(Me.WEEK_DT)
+        Me.Controls.Add(Me.DAYDT)
+        Me.Controls.Add(Me.dtojDT)
         Me.Controls.Add(Me.JOMDataGridView)
-        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -827,17 +875,12 @@ Partial Class Form3
         Me.Controls.Add(IDLabel)
         Me.Controls.Add(Me.IDTextBox)
         Me.Controls.Add(WEEK_ENDINGLabel)
-        Me.Controls.Add(Me.WEEK_ENDINGTextBox)
         Me.Controls.Add(DATE_OF_JOURNEYLabel)
-        Me.Controls.Add(Me.DATE_OF_JOURNEYTextBox)
         Me.Controls.Add(DAY_OF_JOURNEYLabel)
-        Me.Controls.Add(Me.DAY_OF_JOURNEYTextBox)
         Me.Controls.Add(TRAINLabel)
         Me.Controls.Add(Me.TRAINTextBox)
         Me.Controls.Add(DEPLabel)
-        Me.Controls.Add(Me.DEPTextBox)
         Me.Controls.Add(ARRLabel)
-        Me.Controls.Add(Me.ARRTextBox)
         Me.Controls.Add(ST_FROMLabel)
         Me.Controls.Add(Me.ST_FROMTextBox)
         Me.Controls.Add(ST_TOLabel)
@@ -865,6 +908,7 @@ Partial Class Form3
         Me.Controls.Add(NDUELabel)
         Me.Controls.Add(Me.NDUETextBox)
         Me.Controls.Add(Me.JOMBindingNavigator)
+        Me.Location = New System.Drawing.Point(211, 1)
         Me.Name = "Form3"
         Me.Text = "Form3"
         CType(Me.MY_INSPDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -875,6 +919,8 @@ Partial Class Form3
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BEATPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JOMDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MY_INSPDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JOMBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -898,12 +944,7 @@ Partial Class Form3
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents JOMBindingNavigatorSaveItem As ToolStripButton
     Friend WithEvents IDTextBox As TextBox
-    Friend WithEvents WEEK_ENDINGTextBox As TextBox
-    Friend WithEvents DATE_OF_JOURNEYTextBox As TextBox
-    Friend WithEvents DAY_OF_JOURNEYTextBox As TextBox
     Friend WithEvents TRAINTextBox As TextBox
-    Friend WithEvents DEPTextBox As TextBox
-    Friend WithEvents ARRTextBox As TextBox
     Friend WithEvents ST_FROMTextBox As TextBox
     Friend WithEvents ST_TOTextBox As TextBox
     Friend WithEvents ST_WORKED_ATComboBox As ComboBox
@@ -923,7 +964,6 @@ Partial Class Form3
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents ListBox1 As ListBox
     Friend WithEvents BEATPBindingSource As BindingSource
     Friend WithEvents JOMDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
@@ -946,4 +986,14 @@ Partial Class Form3
     Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
+    Friend WithEvents dtojDT As DateTimePicker
+    Friend WithEvents DAYDT As DateTimePicker
+    Friend WithEvents WEEK_DT As DateTimePicker
+    Friend WithEvents DEP_DTP As DateTimePicker
+    Friend WithEvents ARRDateTimePicker As DateTimePicker
+    Friend WithEvents MY_INSPDataSet1 As MY_INSPDataSet1
+    Friend WithEvents JOMBindingSource1 As BindingSource
+    Friend WithEvents JOMTableAdapter1 As MY_INSPDataSet1TableAdapters.JOMTableAdapter
+    Friend WithEvents TableAdapterManager1 As MY_INSPDataSet1TableAdapters.TableAdapterManager
+    Friend WithEvents ST_WORKED_ATLabel1 As Label
 End Class

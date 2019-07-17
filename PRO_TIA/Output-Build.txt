@@ -1,0 +1,1 @@
+﻿1>------ Build started: Project: PRO_TIA, Configuration: Debug Any CPU ------

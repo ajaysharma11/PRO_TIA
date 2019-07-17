@@ -60,6 +60,7 @@ Partial Class Form2
         Me.CMD_ADD = New System.Windows.Forms.Button()
         Me.CMD_SAVE = New System.Windows.Forms.Button()
         Me.CMD_DELETE = New System.Windows.Forms.Button()
+        Me.CMD_EXIT = New System.Windows.Forms.Button()
         NAMELabel = New System.Windows.Forms.Label()
         HQLabel = New System.Windows.Forms.Label()
         DOBLabel = New System.Windows.Forms.Label()
@@ -113,7 +114,7 @@ Partial Class Form2
         'DORLabel
         '
         DORLabel.AutoSize = True
-        DORLabel.Location = New System.Drawing.Point(232, 58)
+        DORLabel.Location = New System.Drawing.Point(287, 65)
         DORLabel.Name = "DORLabel"
         DORLabel.Size = New System.Drawing.Size(34, 13)
         DORLabel.TabIndex = 11
@@ -122,7 +123,7 @@ Partial Class Form2
         'BASICLabel
         '
         BASICLabel.AutoSize = True
-        BASICLabel.Location = New System.Drawing.Point(232, 83)
+        BASICLabel.Location = New System.Drawing.Point(287, 90)
         BASICLabel.Name = "BASICLabel"
         BASICLabel.Size = New System.Drawing.Size(41, 13)
         BASICLabel.TabIndex = 13
@@ -131,7 +132,7 @@ Partial Class Form2
         'BANKLabel
         '
         BANKLabel.AutoSize = True
-        BANKLabel.Location = New System.Drawing.Point(232, 109)
+        BANKLabel.Location = New System.Drawing.Point(287, 116)
         BANKLabel.Name = "BANKLabel"
         BANKLabel.Size = New System.Drawing.Size(39, 13)
         BANKLabel.TabIndex = 15
@@ -140,7 +141,7 @@ Partial Class Form2
         'ACCOUNTLabel
         '
         ACCOUNTLabel.AutoSize = True
-        ACCOUNTLabel.Location = New System.Drawing.Point(232, 135)
+        ACCOUNTLabel.Location = New System.Drawing.Point(287, 142)
         ACCOUNTLabel.Name = "ACCOUNTLabel"
         ACCOUNTLabel.Size = New System.Drawing.Size(62, 13)
         ACCOUNTLabel.TabIndex = 17
@@ -286,70 +287,70 @@ Partial Class Form2
         'NAMETextBox
         '
         Me.NAMETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "NAME", True))
-        Me.NAMETextBox.Location = New System.Drawing.Point(88, 58)
+        Me.NAMETextBox.Location = New System.Drawing.Point(62, 58)
         Me.NAMETextBox.Name = "NAMETextBox"
-        Me.NAMETextBox.Size = New System.Drawing.Size(137, 20)
+        Me.NAMETextBox.Size = New System.Drawing.Size(120, 20)
         Me.NAMETextBox.TabIndex = 4
         '
         'HQTextBox
         '
         Me.HQTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "HQ", True))
-        Me.HQTextBox.Location = New System.Drawing.Point(88, 84)
+        Me.HQTextBox.Location = New System.Drawing.Point(62, 84)
         Me.HQTextBox.Name = "HQTextBox"
-        Me.HQTextBox.Size = New System.Drawing.Size(137, 20)
+        Me.HQTextBox.Size = New System.Drawing.Size(120, 20)
         Me.HQTextBox.TabIndex = 6
         '
         'DOBTextBox
         '
         Me.DOBTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "DOB", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.DOBTextBox.Location = New System.Drawing.Point(88, 110)
+        Me.DOBTextBox.Location = New System.Drawing.Point(62, 110)
         Me.DOBTextBox.Name = "DOBTextBox"
-        Me.DOBTextBox.Size = New System.Drawing.Size(137, 20)
+        Me.DOBTextBox.Size = New System.Drawing.Size(120, 20)
         Me.DOBTextBox.TabIndex = 8
         '
         'DOATextBox
         '
         Me.DOATextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "DOA", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.DOATextBox.Location = New System.Drawing.Point(88, 136)
+        Me.DOATextBox.Location = New System.Drawing.Point(62, 136)
         Me.DOATextBox.Name = "DOATextBox"
-        Me.DOATextBox.Size = New System.Drawing.Size(137, 20)
+        Me.DOATextBox.Size = New System.Drawing.Size(120, 20)
         Me.DOATextBox.TabIndex = 10
         '
         'DORTextBox
         '
         Me.DORTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "DOR", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "dd-MMM-yyyy"))
-        Me.DORTextBox.Location = New System.Drawing.Point(300, 54)
+        Me.DORTextBox.Location = New System.Drawing.Point(355, 61)
         Me.DORTextBox.Name = "DORTextBox"
-        Me.DORTextBox.Size = New System.Drawing.Size(137, 20)
+        Me.DORTextBox.Size = New System.Drawing.Size(109, 20)
         Me.DORTextBox.TabIndex = 12
         '
         'BASICTextBox
         '
         Me.BASICTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "BASIC", True))
-        Me.BASICTextBox.Location = New System.Drawing.Point(300, 80)
+        Me.BASICTextBox.Location = New System.Drawing.Point(355, 87)
         Me.BASICTextBox.Name = "BASICTextBox"
-        Me.BASICTextBox.Size = New System.Drawing.Size(137, 20)
+        Me.BASICTextBox.Size = New System.Drawing.Size(109, 20)
         Me.BASICTextBox.TabIndex = 14
         '
         'BANKTextBox
         '
         Me.BANKTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "BANK", True))
-        Me.BANKTextBox.Location = New System.Drawing.Point(300, 106)
+        Me.BANKTextBox.Location = New System.Drawing.Point(355, 113)
         Me.BANKTextBox.Name = "BANKTextBox"
-        Me.BANKTextBox.Size = New System.Drawing.Size(137, 20)
+        Me.BANKTextBox.Size = New System.Drawing.Size(109, 20)
         Me.BANKTextBox.TabIndex = 16
         '
         'ACCOUNTTextBox
         '
         Me.ACCOUNTTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MY_DATABindingSource, "ACCOUNT", True))
-        Me.ACCOUNTTextBox.Location = New System.Drawing.Point(300, 132)
+        Me.ACCOUNTTextBox.Location = New System.Drawing.Point(355, 139)
         Me.ACCOUNTTextBox.Name = "ACCOUNTTextBox"
-        Me.ACCOUNTTextBox.Size = New System.Drawing.Size(137, 20)
+        Me.ACCOUNTTextBox.Size = New System.Drawing.Size(109, 20)
         Me.ACCOUNTTextBox.TabIndex = 18
         '
         'CMD_ADD
         '
-        Me.CMD_ADD.Location = New System.Drawing.Point(493, 49)
+        Me.CMD_ADD.Location = New System.Drawing.Point(62, 195)
         Me.CMD_ADD.Name = "CMD_ADD"
         Me.CMD_ADD.Size = New System.Drawing.Size(101, 28)
         Me.CMD_ADD.TabIndex = 19
@@ -358,7 +359,7 @@ Partial Class Form2
         '
         'CMD_SAVE
         '
-        Me.CMD_SAVE.Location = New System.Drawing.Point(493, 83)
+        Me.CMD_SAVE.Location = New System.Drawing.Point(169, 195)
         Me.CMD_SAVE.Name = "CMD_SAVE"
         Me.CMD_SAVE.Size = New System.Drawing.Size(101, 28)
         Me.CMD_SAVE.TabIndex = 20
@@ -367,19 +368,29 @@ Partial Class Form2
         '
         'CMD_DELETE
         '
-        Me.CMD_DELETE.Location = New System.Drawing.Point(493, 117)
+        Me.CMD_DELETE.Location = New System.Drawing.Point(276, 195)
         Me.CMD_DELETE.Name = "CMD_DELETE"
         Me.CMD_DELETE.Size = New System.Drawing.Size(101, 28)
         Me.CMD_DELETE.TabIndex = 21
         Me.CMD_DELETE.Text = "DELETE"
         Me.CMD_DELETE.UseVisualStyleBackColor = True
         '
+        'CMD_EXIT
+        '
+        Me.CMD_EXIT.Location = New System.Drawing.Point(383, 195)
+        Me.CMD_EXIT.Name = "CMD_EXIT"
+        Me.CMD_EXIT.Size = New System.Drawing.Size(101, 28)
+        Me.CMD_EXIT.TabIndex = 22
+        Me.CMD_EXIT.Text = "EXIT"
+        Me.CMD_EXIT.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.IndianRed
-        Me.ClientSize = New System.Drawing.Size(626, 201)
+        Me.ClientSize = New System.Drawing.Size(538, 451)
+        Me.Controls.Add(Me.CMD_EXIT)
         Me.Controls.Add(Me.CMD_DELETE)
         Me.Controls.Add(Me.CMD_SAVE)
         Me.Controls.Add(Me.CMD_ADD)
@@ -400,8 +411,10 @@ Partial Class Form2
         Me.Controls.Add(ACCOUNTLabel)
         Me.Controls.Add(Me.ACCOUNTTextBox)
         Me.Controls.Add(Me.MY_DATABindingNavigator)
+        Me.Location = New System.Drawing.Point(211, 1)
         Me.Name = "Form2"
         Me.Text = "MY DATA"
+        Me.TopMost = True
         CType(Me.MY_INSPDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MY_DATABindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MY_DATABindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -440,4 +453,5 @@ Partial Class Form2
     Friend WithEvents CMD_ADD As Button
     Friend WithEvents CMD_SAVE As Button
     Friend WithEvents CMD_DELETE As Button
+    Friend WithEvents CMD_EXIT As Button
 End Class

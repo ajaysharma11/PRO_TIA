@@ -39,4 +39,8 @@
         Dim DT As Date = CDate(DateAdd("yyyy", 60, DOBTextBox.Text))
         DORTextBox.Text = CStr(DT)
     End Sub
+
+    Private Sub CMD_EXIT_Click(sender As Object, e As EventArgs) Handles CMD_EXIT.Click
+        Me.Close()
+    End Sub
 End Class

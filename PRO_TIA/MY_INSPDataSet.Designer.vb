@@ -606,6 +606,8 @@ Partial Public Class MY_INSPDataSet
         
         Private columnDAYS As Global.System.Data.DataColumn
         
+        Private columnDAY_BOOKED As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -674,6 +676,14 @@ Partial Public Class MY_INSPDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property DAY_BOOKEDColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDAY_BOOKED
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -710,9 +720,9 @@ Partial Public Class MY_INSPDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function Add_BEAT__PRow(ByVal STATION As String, ByVal _CLASS As String, ByVal DAYS As Integer) As _BEAT__PRow
+        Public Overloads Function Add_BEAT__PRow(ByVal STATION As String, ByVal _CLASS As String, ByVal DAYS As Integer, ByVal DAY_BOOKED As String) As _BEAT__PRow
             Dim row_BEAT__PRow As _BEAT__PRow = CType(Me.NewRow,_BEAT__PRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, STATION, _CLASS, DAYS}
+            Dim columnValuesArray() As Object = New Object() {Nothing, STATION, _CLASS, DAYS, DAY_BOOKED}
             row_BEAT__PRow.ItemArray = columnValuesArray
             Me.Rows.Add(row_BEAT__PRow)
             Return row_BEAT__PRow
@@ -745,6 +755,7 @@ Partial Public Class MY_INSPDataSet
             Me.columnSTATION = MyBase.Columns("STATION")
             Me.columnCLASS = MyBase.Columns("CLASS")
             Me.columnDAYS = MyBase.Columns("DAYS")
+            Me.columnDAY_BOOKED = MyBase.Columns("DAY_BOOKED")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -761,6 +772,8 @@ Partial Public Class MY_INSPDataSet
             MyBase.Columns.Add(Me.columnCLASS)
             Me.columnDAYS = New Global.System.Data.DataColumn("DAYS", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnDAYS)
+            Me.columnDAY_BOOKED = New Global.System.Data.DataColumn("DAY_BOOKED", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDAY_BOOKED)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID}, true))
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint2", New Global.System.Data.DataColumn() {Me.columnSTATION}, false))
             Me.columnID.AutoIncrement = true
@@ -4035,6 +4048,21 @@ Partial Public Class MY_INSPDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property DAY_BOOKED() As String
+            Get
+                Try 
+                    Return CType(Me(Me._tableBEAT__P.DAY_BOOKEDColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'DAY_BOOKED' in table 'BEAT­_P' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me._tableBEAT__P.DAY_BOOKEDColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Function IsSTATIONNull() As Boolean
             Return Me.IsNull(Me._tableBEAT__P.STATIONColumn)
         End Function
@@ -4067,6 +4095,18 @@ Partial Public Class MY_INSPDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub SetDAYSNull()
             Me(Me._tableBEAT__P.DAYSColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsDAY_BOOKEDNull() As Boolean
+            Return Me.IsNull(Me._tableBEAT__P.DAY_BOOKEDColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetDAY_BOOKEDNull()
+            Me(Me._tableBEAT__P.DAY_BOOKEDColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
